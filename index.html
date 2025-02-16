@@ -1,31 +1,224 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="ar">
-    <title>Al Ghassaq</title>
-    <meta name="description" content="مكتب الغسق للتجارة العامة - استيراد، تصدير">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Ghassaq - Premium Tech Store</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Logo -->
-        <img src="alghassaq-logo-new.png" alt="Al Ghassaq Logo" class="logo">
+    <!-- Header -->
+    <header>
+        <nav>
+            <div>
+                <img src="alghassaq-logo-new.png" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">☰</div>
+        </nav>
+    </header>
 
-        <!-- Under Construction Text -->
-        <p class="text-large"><strong>UNDER CONSTRUCTION</strong></p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Premium Tech for Modern Living</h1>
+        <p>Discover the latest gadgets, accessories, and innovative technology solutions at Al Ghassaq. Your trusted partner for all your technology needs.</p>
+        <a href="#" class="cta-btn">Explore Our Collection</a>
+    </section>
 
-        <!-- Email -->
-        <p class="text-medium">
-            <span class="red-text"><strong>E-MAIL: </strong></span>
-            <a href="mailto:info@alghassaq.com">info@alghassaq.com</a>
-        </p>
+    <!-- Featured Products -->
+    <section class="featured">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="/api/placeholder/250/200" alt="Smartphone">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Premium Smartphone X1</h3>
+                    <p class="product-price">$899.99</p>
+                    <a href="#" class="product-btn">Add to Cart</a>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="/api/placeholder/250/200" alt="Laptop">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Ultra Slim Laptop Pro</h3>
+                    <p class="product-price">$1299.99</p>
+                    <a href="#" class="product-btn">Add to Cart</a>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="/api/placeholder/250/200" alt="Smartwatch">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Smart Watch Series 5</h3>
+                    <p class="product-price">$349.99</p>
+                    <a href="#" class="product-btn">Add to Cart</a>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="/api/placeholder/250/200" alt="Wireless Earbuds">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Wireless Earbuds Pro</h3>
+                    <p class="product-price">$179.99</p>
+                    <a href="#" class="product-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Phone Numbers -->
-        <p class="text-small">
-            <span class="red-text"><strong>TEL.:</strong></span> 009647811705885, 009647709409801
-        </p>
-    </div>
+    <!-- Categories -->
+    <section class="categories">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="categories-grid">
+            <!-- Category 1 -->
+            <div class="category-card">
+                <div class="category-icon">📱</div>
+                <h3>Smartphones</h3>
+                <p>Latest models from top brands</p>
+            </div>
+            
+            <!-- Category 2 -->
+            <div class="category-card">
+                <div class="category-icon">💻</div>
+                <h3>Laptops</h3>
+                <p>For work and play</p>
+            </div>
+            
+            <!-- Category 3 -->
+            <div class="category-card">
+                <div class="category-icon">⌚️</div>
+                <h3>Wearables</h3>
+                <p>Smart watches and fitness trackers</p>
+            </div>
+            
+            <!-- Category 4 -->
+            <div class="category-card">
+                <div class="category-icon">🎮</div>
+                <h3>Gaming</h3>
+                <p>Consoles and accessories</p>
+            </div>
+            
+            <!-- Category 5 -->
+            <div class="category-card">
+                <div class="category-icon">🎧</div>
+                <h3>Audio</h3>
+                <p>Headphones, earbuds, and speakers</p>
+            </div>
+            
+            <!-- Category 6 -->
+            <div class="category-card">
+                <div class="category-icon">🏠</div>
+                <h3>Smart Home</h3>
+                <p>Connected devices for modern living</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonials-slider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <p class="testimonial-text">"Al Ghassaq has the best selection of tech products I've found. Their staff is knowledgeable and the prices are competitive. Highly recommended!"</p>
+                <div class="customer-info">
+                    <div class="customer-img">
+                        <img src="/api/placeholder/60/60" alt="Customer 1">
+                    </div>
+                    <div>
+                        <p class="customer-name">Mohammed A.</p>
+                        <p class="customer-location">Dubai, UAE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter to get the latest tech news, exclusive deals, and special offers delivered to your inbox.</p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Column 1 -->
+            <div>
+                <h4 class="footer-title">Al Ghassaq</h4>
+                <p>Your premium destination for cutting-edge technology. Quality products, exceptional service, and the latest innovations.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">t</a>
+                    <a href="#" class="social-link">in</a>
+                    <a href="#" class="social-link">ig</a>
+                </div>
+            </div>
+            
+            <!-- Column 2 -->
+            <div>
+                <h4 class="footer-title">Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Special Deals</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                </ul>
+            </div>
+            
+            <!-- Column 3 -->
+            <div>
+                <h4 class="footer-title">Customer Service</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Warranty & Repairs</a></li>
+                    <li><a href="#">Order Status</a></li>
+                </ul>
+            </div>
+            
+            <!-- Column 4 -->
+            <div>
+                <h4 class="footer-title">About Us</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Al Ghassaq. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
