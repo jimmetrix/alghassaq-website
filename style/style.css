@@ -1,0 +1,55 @@
+/* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center everything using Flexbox */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            height: 100vh; /* Full viewport height */
+            text-align: center; /* Center text */
+        }
+
+        /* Style for the logo */
+        .logo {
+            height: 208px;
+            width: auto;
+            padding: 20px;
+        }
+
+        /* Style for the text */
+        .text-large {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .text-medium {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .text-small {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Style for the red text */
+        .red-text {
+            color: #FF0000;
+        }
+
+        /* Style for links */
+        a {
+            color: inherit; /* Inherit color from parent */
+            text-decoration: none; /* Remove underline */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
