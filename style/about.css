@@ -1,0 +1,190 @@
+/* styles.css: Main styles for About Us page */
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+    font-family: 'Tajawal', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #222222;
+    
+  }
+  
+  header {
+    background-color: #222222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    order: 1;
+    color: #fff;
+    font-size: 28px;
+  }
+
+  .logo {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    order: 2;
+    margin-left: 15px;
+  }
+  
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  header, nav, main, footer {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #222222;
+  }
+  
+  nav ul li a.active, nav ul li a:hover {
+    color: #0073e6;
+  }
+  
+  main {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #222222;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  background-color: #0073e6;
+}
+
+.social-icon i {
+  font-size: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: #0073e6;
+}
+
+.contact-item a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .logo {
+    order: 1;
+    margin: 0 0 10px 0;
+  }
+  
+  header h1 {
+    order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    gap: 15px;
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
