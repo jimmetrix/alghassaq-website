@@ -1,0 +1,208 @@
+/* Base Styles and Typography */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+  font-family: 'Tajawal', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #222222;
+}
+
+/* Layout Containers */
+header, nav, main, footer, .contact-section {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+}
+
+/* Header & Logo Styles */
+header {
+  background-color: #222222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin: 5px 0;
+}
+
+.logo-en {
+  max-width: 200px;
+  order: 1;
+}
+
+.logo-ar { order: 2; }
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #222222;
+}
+
+nav ul li a.active, 
+nav ul li a:hover {
+  color: #0073e6;
+}
+
+/* Main Content Styles */
+main {
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: #333;
+  margin-right: 10px;
+  width: 24px;
+  text-align: center;
+}
+
+.contact-item a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* RTL Contact Styles */
+.rtl-contact {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl-contact .contact-item {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.rtl-contact .contact-item i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* Social Media Styles */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #222222;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  background-color: #0073e6;
+}
+
+.social-icon i {
+  font-size: 20px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .logo-en {
+    max-width: 120px;
+  }
+  
+  .logo-ar {
+    max-width: 90px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    gap: 15px;
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+} 

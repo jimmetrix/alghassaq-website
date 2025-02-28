@@ -99,12 +99,15 @@ main {
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  margin-bottom: 15px;
 }
 
 .contact-item i {
   font-size: 20px;
-  color: #0073e6;
+  color: #333;
+  margin-right: 10px;
+  width: 24px;
+  text-align: center;
 }
 
 .contact-item a {
@@ -118,11 +121,16 @@ main {
 
 /* RTL Contact Styles */
 .rtl-contact {
-  flex-direction: row-reverse;
+  direction: rtl;
   text-align: right;
 }
 
-.rtl-contact i {
+.rtl-contact .contact-item {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.rtl-contact .contact-item i {
   margin-right: 0;
   margin-left: 10px;
 }
