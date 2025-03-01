@@ -65,7 +65,3 @@ For optimal performance:
 ## 📝 License
 
 All rights reserved. assets in this project are proprietary.
-
-## 📞 Contact
-
-For any inquiries about this project, please reach out through the official AlGhassaq website contact channels.
